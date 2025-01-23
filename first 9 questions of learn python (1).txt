@@ -1,0 +1,72 @@
+//PYTHON
+//Assignment 1.1: WAP to print your name three time
+i=1
+while(i<=3):
+print('Aishlee')
+i=i+1
+
+//Assignment 2.1: WAP to add three numbers and print the result.
+a=1
+b=2
+c=3
+d=a+b+c
+print(d)
+
+//Assignment 2.2: WAP to concatinate three strings and print the result.
+e="hi"
+f="aishlee"
+g="here"
+h=e+f+g
+print(h)
+
+//Assignment 4.1: WAP to print the table of 7, 9.
+for p in range(1,11):
+	print (7," * ", p, " = ", p*7)
+print(9,"*",p,"=",p*9)
+
+//Assignment 4.2: WAP to print the table of n and n is given by user.
+k=int(input("enter whose table u want"))
+for q in range(1,11):
+	print (q," * ", k, " = ", k*q)
+
+//Assingment 4.3: WAP to add all the numbers from 1 to n and n is given by user.
+m=int(input("the no. till which u want to add"))
+for r in range(1,m):
+r=r+1
+	print(r)
+
+//Assingment 5.1: WAP to find max amoung three numbers and input from user. [Try max() function]
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+maximum = max(num1, num2, num3)
+print("The maximum number is:", maximum)
+
+
+
+//Assingment 5.2: WAP to add all numbers divisible by 7 and 9 from 1 to n and n is given by the user.
+
+n = int(input("Enter the value of n: "))
+sum_of_numbers = 0
+for i in range(1, n + 1):
+    if i % 7 == 0 and i % 9 == 0:  # Check if divisible by both 7 and 9
+        sum_of_numbers += i
+print("The sum of numbers divisible by 7 and 9 from 1 to", n, "is:", sum_of_numbers)
+
+//Assignment 5.3: WAP to add all prime numbers from 1 to n and n is given by the user.
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+n = int(input("Enter the value of n: "))
+sum_of_primes = 0
+for i in range(1, n + 1):
+    if is_prime(i):
+        sum_of_primes += i
+print("The sum of all prime numbers from 1 to", n, "is:", sum_of_primes)
+
+
