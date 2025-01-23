@@ -1,0 +1,142 @@
+ASSIGNMENT 2
+MAHI MAHAJAN
+102316103
+
+QUESTION 1
+
+L = [10, 20, 30, 40, 50, 60, 70, 80]
+L.append(200)
+L.append(300)
+print("after adding 200 and 300: " , L)
+L.remove(10)
+L.remove(30)
+print("after removing 10 and 30 from list: ", L)
+L.sort()
+print("after sorting in ascending order: ", L)
+L.sort(reverse=True)
+print("after sorting in descending order: ", L)
+
+QUESTION 2
+
+scores = [45 , 89.5, 76, 45.4, 89, 92, 58, 45]
+highest_score = max(scores)
+highest_index = scores.index(highest_score)
+print("Highest score:", highest_score)
+print("Index of the highest score:", highest_index)
+lowest_score = min(scores)
+lowest_count = scores.count(lowest_score)
+print("Lowest score: ", lowest_score)
+print("count of the lowest score: ", lowest_count)
+reversed_tuple_as_list = list(scores[::-1])
+print("Reversed tuple as a list:", reversed_tuple_as_list)
+score_to_check = 76  
+if score_to_check in scores:
+    first_occurrence_index = scores.index(score_to_check)
+    print(f"Score {score_to_check} is present at index {first_occurrence_index}")
+else:
+    print(f"Score {score_to_check} is not present in the tuple.")
+
+QUESTION 3
+
+
+import random
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+random_numbers = [random.randint(100, 900) for _ in range(100)]
+odd_numbers = [num for num in random_numbers if num % 2 != 0]
+even_numbers = [num for num in random_numbers if num % 2 == 0]
+prime_numbers = [num for num in random_numbers if is_prime(num)]
+print("List of 100 random numbers:", random_numbers)
+print("Odd numbers:", odd_numbers)
+print("Count of odd numbers:", len(odd_numbers))
+
+print("Even numbers:", even_numbers)
+print("Count of even numbers:", len(even_numbers))
+
+print("Prime numbers:", prime_numbers)
+print("Count of prime numbers:", len(prime_numbers))
+
+
+QUESTION 4
+
+A = {34, 56, 78, 90}
+B = {78, 45, 90, 23}
+unique_scores = A.union(B)
+print("Unique scores (Union):", unique_scores)
+common_scores = A.intersection(B)
+print("Common scores (Intersection):", common_scores)
+exclusive_scores = A.symmetric_difference(B)
+print("Exclusive scores (Symmetric Difference):", exclusive_scores)
+is_A_subset_B = A.issubset(B)
+is_B_superset_A = B.issuperset(A)
+print("Is Team A's scores a subset of Team B's scores?", is_A_subset_B)
+print("Is Team B's scores a superset of Team A's scores?", is_B_superset_A)
+
+score_to_remove = int(input("Enter a score to remove from Team A: "))
+if score_to_remove in A:
+    A.remove(score_to_remove)
+    print(f"Score {score_to_remove} removed from Team A.")
+else:
+    print(f"Score {score_to_remove} is not present in Team A.")
+print("Updated Team A scores:", A)
+
+
+QUESTION 5
+
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New York"
+
+}
+print(sample_dict)
+sample_dict["location"]=sample_dict.pop("city")
+print(sample_dict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
