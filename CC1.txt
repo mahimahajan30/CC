@@ -1,0 +1,375 @@
+
+ASSIGNMENT 1
+A1.1
+
+print("MAHI")
+print("MAHI")
+print("MAHI")
+
+
+A2.1
+
+a = 10
+b = 220
+c = a + b
+print ( c)
+
+A2.2
+
+
+a = "MAHI"
+b = "MAHAJAN"
+c = a + b
+print ( c)
+
+A2.3
+
+a = "MAHI"
+b = 129
+c = a + str(b)	
+print (c)
+
+A3.1
+
+a = input("Enter First String: ")
+b = input("Enter Second String: ")
+c = a + b
+print  (c)
+
+A3.2
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+c = a + b
+print (a, " + ", b, " --> ", c)
+
+A4.1
+
+i=1
+while i <= 10:
+	print (i)
+	i = i+1
+
+A4.2
+
+print ("range(10)        --> ", list(range(10)))
+print ("range(10,20)     --> ", list(range(10,20)))
+print ("range(0,20,2)    --> ", list(range(2,20,2)))
+print ("range(-10,-20,2) --> ", list(range(-10,-20,2)))
+print ("range(-10,-20,-2)--> ", list(range(-10,-20,-2)))
+
+
+A4.3
+
+for i in range(0,10):
+	print (i)
+
+A4.4
+
+for i in range(1,11):
+	print (5," * ", i , " = ", i * 5)
+
+A4.5
+
+s=0
+for i in range(1,11):
+	s=s+i
+print ("Sum is --> ",s)
+
+A5.1
+
+a = int(input("Enter First No: "))
+b = int(input("Enter Second No: "))
+if  a > b:
+	print (a," > ",b)
+else:
+	print (a," < ",b)
+
+A5.2
+
+n = int(input("Enter a No: "))
+if  n % 2 == 0:
+	print (n," is even")
+else:
+	print (n," is odd")
+
+
+A5.3
+
+
+n = int(input("Enter a No: "))
+f=0
+for i in range(2, n//2 + 1):
+	if  n % i == 0:
+		f=1
+		break
+
+if f==0:
+	print ("Prime")
+else:
+	print ("Not Prime")
+
+A5.4
+
+a = input("Enter First String : ")
+b = input("Enter Second String: ")
+
+if a == b:
+	print ("a == b")
+elif a >= b:
+	print ("a > b")
+else:
+	print ("a < b")
+
+A6.1
+
+def Add(a,b):
+	c=a+b
+	return c
+
+print ("Add(10,20) -->", Add(10,20))
+print ("Add(20,50) -->", Add(20,50))
+print ("Add(80,200) -->", Add(80,200))
+
+A6.2
+
+def IsPrime(n):
+	for i in range(2, n//2 + 1):
+		if n%i==0:
+			return 0
+	return 1
+
+print ("IsPrime(20)  --> ", IsPrime(20))
+print ("IsPrime(23)  --> ", IsPrime(23))
+print ("IsPrime(200) --> ", IsPrime(200))
+print ("IsPrime(37)  --> ", IsPrime(37))
+
+A6.3
+
+def AddN(n):
+	s= sum(range(n+1))
+	return s
+
+print ("AddN(10)  --> ", AddN(10))
+print ("AddN(20)  --> ", AddN(20))
+print ("AddN(50)  --> ", AddN(50))
+print ("AddN(200) --> ", AddN(200))
+
+A7
+
+import math as m
+print ("exp(-200)    --> ", m.exp(-200))  # Exponential function
+print ("log(100,2)   --> ", m.log(100,2)) # Log
+print ("log(100,10)  --> ", m.log(100,10))# Log
+print ("log10(100)   --> ", m.log10(100)) # Log 10
+print ("m.cos(30)    --> ", m.cos(30))    # cos
+print ("m.sin(30)    --> ", m.sin(30))    # sin
+print ("m.tan(30)    --> ", m.tan(30))    # tan
+print ("m.sqrt(324)  --> ", m.sqrt(324))
+print ("m.ceil(89.9) --> ", m.ceil(89.9))
+print ("m.floor(89.9)--> ", m.floor(89.9))
+
+A8.1
+
+var = 'Hello World!'
+print ("var      --> ", var)
+print ("var[0]   --> ", var[0])
+print ("var[1:5] --> ", var[1:5])
+print ("var[:-5] --> ", var[:-5])
+
+A8.2
+
+var = 'Hello World!'
+print ("String --> ", var)
+print ("Length --> : ", len(var))
+print ("Upper  --> : ", var.upper())
+print ("Lower  --> : ", var.lower())
+
+A8.3
+
+name=input("Enter your name: ")
+age=int(input("Enter your age : "))
+price=float(input("Enter the book price: "))
+s="\nYour name is %s, age is %d and book price is %f" %(name.upper(),age,price)
+print (s)
+
+A8.4
+
+
+para_str = """This is a long string that is made up of
+several lines and non-printable characters such as
+TAB ( \t ) and they will show up that way when displayed.
+NEWLINEs within the string, whether explicitly given like
+this within the brackets [ \n ], or just a NEWLINE within
+the variable assignment will also show up.
+"""
+print (para_str)
+
+
+A8.5
+
+var =" Indian   Army    "
+
+print("String    --> ", var)
+print("Length    --> ", len(var))
+print("var strip --> ", var.strip())
+print("Length of var after strip --> ", len(var.strip()))
+
+A8.6
+
+
+var =" Indian,   Army    "
+
+print("String    --> ", var)
+print("Length    --> ", len(var))
+print("var split --> ", var.split())
+print("var split --> ", var.split(' '))
+print("var split --> ", var.split(','))
+
+# Strip + Split
+print("var split --> ", var.strip().split(','))
+
+A8.7
+
+var=" Indian Army    "
+print ("String       --> ", var)
+print ("Count of ' ' --> ", var.count(' '))
+print ("Count of 'a' --> ", var.count('a'))
+print ("Count of 'n' --> ", var.count('an'))
+
+
+A8.8
+
+var="Indian Army"
+print ("String    --> ", var)
+print ("var[::1]  --> ", var[::1])
+print ("var[::2]  --> ", var[::2])
+print ("var[::-1] --> ", var[::-1])
+print ("var[::-2] --> ", var[::-2])
+
+var=var[::-1]
+print ("var after reverse --> ", var)
+
+A8.9
+
+s1="Indian Army"
+s2="malayalam"
+s3="madam"
+s4="teacher"
+print ("s1 --> ", s1==s1[::-1])
+print ("s2 --> ", s2==s2[::-1])
+print ("s3 --> ", s3==s3[::-1])
+print ("s4 --> ", s4==s4[::-1])
+
+A9.1
+
+import random as r
+print (r.random())
+print (r.random())
+print (round(r.random(),4))
+
+A9.2
+
+import random as r
+print (r.randint(1, 100))
+print (r.randint(1, 100))
+print (r.randint(-10, 10))
+print (r.randint(-10, 10))
+
+A9.3
+
+import random as r
+print (r.uniform(1, 100))
+print (r.uniform(1, 100))
+print (r.uniform (-10, 10))
+print (r.uniform (-10, 10))
+print (round(r.uniform (-10, 10),2))
+
+A9.4
+
+import random as r
+
+A=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print (r.sample(A, 4))
+print (r.sample(A, 2))
+print (r.sample(range(0,100), 2))
+print (r.sample(range(-100,100), 5))
+
+A9.5
+
+import string as s
+import random as r
+print ("String        --> ",s.ascii_letters)
+
+passwd=r.sample(s.ascii_letters, 6)
+print ("Selected Char --> ",passwd)
+
+passwd1="".join(passwd)
+print ("passwd1       --> ",passwd1)
+
+passwd2="+".join(passwd)
+print ("passwd2       --> ",passwd2)
+
+passwd3="*".join(passwd)
+print ("passwd3       --> ",passwd3)
+
+
+A9.6
+
+import string as s
+import random as r
+print ("Digits --> ",s.digits)
+
+otp=r.sample(s.digits, 5)
+print ("Selected num1 --> ",otp)
+otp="".join(otp)
+print ("otp1          --> ",otp)
+
+otp=r.sample(s.digits, 5)
+print ("Selected num2 --> ",otp)
+otp="".join(otp)
+print ("otp2          --> ",otp)
+
+otp=r.sample(s.digits, 5)
+print ("Selected num2 --> ",otp)
+otp="".join(otp)
+print ("otp3          --> ",otp)
+
+
+A9.7
+
+import string as s
+import random as r
+print ("String + Digits --> ",s.ascii_letters + s.digits)
+
+mixPasswd=r.sample(s.ascii_letters + s.digits, 5)
+print ("\nSelected Str1 --> ",mixPasswd)
+mixPasswd="".join(mixPasswd)
+print ("mixPasswd1    --> ",mixPasswd)
+
+mixPasswd=r.sample(s.ascii_letters + s.digits, 6)
+print ("\nSelected Str2 --> ",mixPasswd)
+mixPasswd="".join(mixPasswd)
+print ("mixPasswd2    --> ",mixPasswd)
+
+splChar="#@!~%^&*()_+=-[]{}|"
+mixPasswd=r.sample(splChar + s.ascii_letters + s.digits, 8)
+print ("\nSelected Str3 --> ",mixPasswd)
+mixPasswd="".join(mixPasswd)
+print ("mixPasswd3    --> ",mixPasswd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
